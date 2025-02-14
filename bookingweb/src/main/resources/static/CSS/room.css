@@ -1,0 +1,154 @@
+
+.room_grid_value {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .room_card_value {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room_image {
+    position: relative;
+    isolation: isolate;
+  }
+  
+  .room_icon {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 1;
+  }
+  
+  .room_icon span {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 1.5rem;
+    background-color: var(--white);
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .room_icon span:nth-child(1) {
+    color: #f472b6;
+  }
+  
+  .room_icon span:nth-child(2) {
+    color: #c084fc;
+  }
+  
+  .room_icon span:nth-child(3) {
+    color: #60a5fa;
+  }
+  
+  .room_details {
+    padding: 1rem;
+  }
+  
+  .room_card_value h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+  
+  .room_card_value p {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+  }
+  
+  .room_card_value h5 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+  }
+  
+  .room_card_value h5 span {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+  }
+
+  @media (width > 1024px) {
+    .room_grid_value {
+      gap: 2rem;
+    }
+  }
+
+
+
+  
+
+  /* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}

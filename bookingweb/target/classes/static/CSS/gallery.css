@@ -1,0 +1,56 @@
+.pic_value {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template:
+      "1fr 1fr 1fr 1fr 1fr" 33.33vh
+      "1fr 1fr 1fr 1fr 1fr" 33.33vh
+      "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+  }
+  
+  .pic_value .picture {
+    position: relative;
+  }
+  .pic_value .picture.a {
+    grid-row: span 2;
+  }
+  .pic_value .picture.b,
+  .pic_value .picture.f,
+  .pic_value .picture.h,
+  .pic_value .picture.j {
+    grid-column: span 2;
+  }
+  .pic_value .picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 991px) {
+    .pic_value {
+      grid-template:
+        "1fr 1fr 1fr" 250px
+        "1fr 1fr 1fr" 250px
+        "1fr 1fr 1fr" 250px
+        "1fr 1fr 1fr" 250px
+        "1fr 1fr 1fr" 250px;
+    }
+  }
+  @media (max-width: 768px) {
+    .pic_value {
+      grid-template:
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px;
+    }
+  }
+  .pic_value .picture.h {
+    grid-column: span 1;
+  }
+  
