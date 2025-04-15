@@ -51,7 +51,6 @@ bash
 Copy
 Edit
 mvn spring-boot:run
-The project will be available at http://localhost:8080. 🎉
 
 🤝 Contributions & Support
 We welcome contributions! Feel free to submit pull requests or report issues.
